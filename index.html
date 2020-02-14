@@ -1,99 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Mon Portfolio</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orquidea Marques Barbosa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Update these with your own fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="entete">
-        <h1 id="nom">Orquidea</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">A propos de moi</a></li>
-                <li><a href="#">Competences</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+    <header>
+        <div class="logo">
+            <img src="img/logo3.png" alt="logo">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">A propos</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Portfolio</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="container">
-        <img class="photo" src="images/photoprofil.jpg" alt="ma photo"/>
-        <h1 class="presentation">Orquidea Marques Barbosa</h1>
-        <h2>Développeuse web</h2>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Bonjour, Je m'appelle <strong>Orquidea Marques Barbosa</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Développeuse front-end</p>
+        <img src="img/photoprofil.jpg" alt="a picture of me" class="intro__img">
     </section>
 
-    <section class="infos">
-        <h2>A propos de moi</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique beatae libero illum iste pariatur architecto magni? Nemo, quisquam, excepturi dolores minima beatae laboriosam fuga, numquam at itaque ea magnam.<br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusantium expedita ipsam quas suscipit. At, dolor quam? Quidem temporibus aspernatur animi quis a similique tenetur et illum quaerat sed. Impedit!
-        </p>
-    </section>
-    
-    <section class="comp">
-        <h2>Mes Competences</h2>
-            <div class="skills">
-                <h3>HTML/CSS</h3>
-                <div class="meter">
-                    <div class="prog"></div>
-                </div>
-            </div>
-            <div class="skills">
-                    <h3>Javascript</h3>
-                    <div class="meter">
-                        <div class="prog-1"></div>
-                    </div>
-            </div>
-            <div class="skills">
-                    <h3>PHP</h3>
-                    <div class="meter">
-                        <div class="prog-2"></div>
-                    </div>
-            </div>
-            <div class="skills">
-                    <h3>MySql</h3>
-                    <div class="meter">
-                        <div class="prog-3"></div>
-                    </div>
-            </div>
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">Mes services</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Design + Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div><!--/service-->
+
+            <div class="service">
+                <h3>E-Commerce</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div><!--/service-->
+
+            <div class="service">
+                <h3>WordPress</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div><!--/service-->
+        </div><!--/services-->
+
+        <a href="./CVOrquideaMB2.pdf" target="_blank" class="btn">Télécharger CV</a>
     </section>
 
-    <section class="portfolio">
-        <h2>Mon Portfolio</h2>
-        <div class="images">
-            <div class="images-1">
-                <a href="#"><img src="images/imageNature1.jpeg" alt="photos"/></a>
-                <a href="#"><img src="images/imageNature1.jpeg" alt="photos"/></a>
-                <a href="#"><img src="images/imageNature1.jpeg" alt="photos"/></a>
-            </div>
-            <div class="images-2">
-                <a href="#"><img src="images/imageNature1.jpeg" alt="photos"/></a>
-                <a href="#"><img src="images/imageNature1.jpeg" alt="photos"/></a>
-                <a href="#"><img src="images/imageNature1.jpeg" alt="photos"/></a>
-            </div>
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">A propos de moi</h2>
+        <p class="section__subtitle section__subtitle--about">Développeuse web junior</p>
+
+        <div class="about-me__body">
+            <p>Bonjour, je m'appelle Orquidea, j'ai 29 ans, je suis de nationnalité Portugaise, d'origine Cap-verdienne, aujourd'hui après avoir fini ma dernière formation de Développeuse web chez Simplon, je cherche un poste de développeuse frontend junior en Région Parisienne, si vous avez besoin de quelqu'un de motivée, rigoureuse, curieuse, travailleuse, souriante et que n'as pas peur de relever de nouveaux défis, alors n'hésitez pas à me contacter.</p>
+            <p>Ce portfolio à pour but de me présenter et présenter quelques projets réalisés dans le cadre de ma formation professionnele ou dans le personnel, il à été réalisé avec HTML, CSS et JAVASCRIPT</p>
+        </div>
+        <img src="img/profil.jpg" alt="Jane leaning against a bus" class="about-me__img">
+    </section>
+
+    <!-- My work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">Portfolio</h2>
+        <p class="sectio__subtitle section__subtitle--work">Présentation de quelques projets</p>
+
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+            <a href="portfolio-item.html" class="portfolio__item">
+                <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 02 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 03 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 04 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 05 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 06 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 07 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 08 -->
+            <a href="#" class="portfolio__item">
+                <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
+            </a>
+            
+            <!-- Portfolio item 09 -->
+            <!-- <a href="#" class="portfolio__item">
+                <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
+            </a> -->
+            
+            <!-- Portfolio item 0 0-->
+            <!-- <a href="#" class="portfolio__item">
+                <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
+            </a> -->
         </div>
     </section>
 
-    <section class="contact">
-        <h2>Contact</h2>
-    </section>
-
-    <footer>
-            <p>Copyright &#169;    2019 Orquidea.</p>
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <h3>Contactez-moi:</h3>
+        <a href="mailto:orquideamarques89@gmail.com" class="footer__link">orquideamarques89@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://codepen.io">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://twitter.com">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="cop"><small>Copyright 2020 by Orquidea Marques Barbosa</small></p>
+        <a href="#" class="iconne"><i class="far fa-arrow-alt-circle-up"></i></a>
     </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="app.js"></script>
 </body>
-
-
-
 </html>
-
-
-
-
-
