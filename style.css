@@ -243,6 +243,7 @@ header {
 
 .intro {
     position: relative;
+    padding-bottom: 15%;
 }
 
 .intro__img {
@@ -343,25 +344,25 @@ header {
     margin: 0 auto;
 }
 
-.about-me__img {
+/* .about-me__img {
     box-shadow: var(--bs);
     border-radius: 15px;
-}
+} */
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
     .about-me {
         display: grid;
-        grid-template-columns: 1fr 200px;
+        grid-template-columns: 1fr 600px;
         grid-template-areas: 
             "title img"
             "subtitle img"
             "text img";
         grid-column-gap: 2em;
     }
-    
-    .section__title--about {
+*/   
+    /* .section__title--about {
         grid-area: title;
-    }
+    }  */
     
     .section__subtitle--about {
         grid-column: 1 / -1;
@@ -378,7 +379,7 @@ header {
         position: relative;
         z-index: 2;
     }
-}
+
 
 /* My Work */
 
